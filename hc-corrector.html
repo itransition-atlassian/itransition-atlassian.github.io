@@ -1,0 +1,81 @@
+---
+layout: default
+title: HelpCenter Corrector
+---
+
+<h2>HelpCenter Corrector Documentation</h2>
+
+<div class="hc-logo"></div>
+<div class="download-link"><a href="https://marketplace.atlassian.com/plugins/com.itransition.csam.helpcenter-corrector/server/overview">Download from Atlassian Marketplace</a></div>
+
+<p>The <b>HelpCenter Corrector</b> plugin is designed to restrict an access to a Jira Service Desk HelpCenter.
+    <br>
+    There are three types of restrictions: for all users at once, per group and for users without group.
+    <br>
+    Plugin settings page can be found at “Other” section of “Addons” page.
+</p>
+<h3>Add or update restriction</h3>
+<p>
+    To restrict access to the HelpCenter for all users do the following:
+<ol type="1">
+    <li>Select “All users” in “Restriction type” dropdown list (you are not able to set groups for this type of restriction).
+    </li>
+    <li>Specify the URL to redirect.<br>Note: base url will be set to your instance URL.</li>
+    <li>Press “Save” button to save changes.</li>
+    <li>Press “Enable” button, if it is not enabled, to enable restriction.</li>
+</ol>
+</p>
+<p>
+    To disable “All users” restriction press “Disable” button.
+    <div class="isa_info">
+        <i class="fa fa-info-circle"></i>
+        “All users” restriction overrides any other restriction.
+    </div>
+</p>
+<p>
+    After that all HelpCenter links in ServiceDesk will be hidden from any user.
+    If the user tries access HelpCenter using direct link, he will be redirected to the URL that you have specified.
+</p>
+<p>
+    The restriction for users without groups can be configured in the same way as restrictions for all users.
+</p>
+<a href="#" onclick="return false;">
+    <img onclick="makeFullScreen(this)" class="screenshot fullscreen" title="Click the image to open in full size"
+         src="assets/img/screenshots/dropdown_types1.png"/>
+</a>
+<p style="text-align: center">Selecting restriction type</p>
+
+<p>
+    To set up group restriction do the following:
+<ol type="1">
+    <li>Select “Group” in “Restriction type” dropdown list.</li>
+    <li>Specify group or groups separated by commas manually or use "Group picker" icon to open group picker search form.</li>
+    <li>Specify the URL to redirect.
+        Note: base url will be set to your instance URL.</li>
+    <li>Press “Save” button to save changes. Restriction will be added to the table, if there is no other restrictions, or it will be updated.</li>
+</ol>
+</p>
+<p>
+    After these steps all HelpCenter links in ServiceDesk will be hidden from any user that belongs to a group you have
+    specified. If the user tries access HelpCenter using direct link, he will be redirected to the URL that you
+    provided.
+</p>
+<p>
+    The steps for editing are the same as for adding - value will be updated.
+</p>
+
+<h3>Remove restriction</h3>
+To remove group do the following:
+<ol type="1">
+    <li>Find the group you need to remove in the “Groups” dropdown button in “Restricted group” section.
+    </li>
+    <li>Select group or groups that need to be removed.
+    </li>
+    <li>Press “Delete” button.</li>
+</ol>
+<a href="#" onclick="return false;">
+    <img onclick="makeFullScreen(this)" class="screenshot fullscreen" title="Click the image to open in full size"
+         src="assets/img/screenshots/dropdown_group1.png"/>
+</a>
+<p style="text-align: center">Dropdown list with restricted groups</p>
+

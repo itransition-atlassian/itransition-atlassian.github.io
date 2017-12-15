@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <!--[if lt IE 9]>
+    <meta http-equiv="refresh" content="0;">
+    <style>body{display:none;}</style>
+    <![endif]-->
+    <title>{{ site.title }}{% if page.title != 'index' %} | {{ page.title }}{% endif %}</title>
+    <meta name="description" content="{{ page.description }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,600,700,400italic,600italic,700italic">
+    <link rel="stylesheet" href="/assets/css/main.css?rev={{ site.github.build_revision }}">
+</head>
+<body>
+
+    <div class="container">
+
+        <header><h1><a href="/">Itransition LTD.</a></h1></header>
+
+        <div class="navigation">
+            <ul>
+                <li><a href="/hc-corrector.html"><span>HelpCenter Corrector Documentation</span></a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            {{ content }}
+        </div>
+
+        <footer>
+            <p>{{ site.time | date: '%Y' }}&nbsp;&nbsp;Itransition&nbsp;LTD.</p>
+        </footer>
+
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="/assets/js/main.js?rev={{ site.github.build_revision }}"></script>
+
+</body>
+</html>

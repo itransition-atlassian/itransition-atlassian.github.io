@@ -1,0 +1,474 @@
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/**
+ * Global / base styles
+ * ==================================================
+ */
+
+html {
+    font-size: 100%;
+    overflow-y: scroll;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust:     100%;
+}
+
+body {
+    background-color: #eee;
+    color: #333;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+a,
+a:visited {
+    color: #25a;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active,
+a:focus,
+a:hover {
+    outline: 0;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 50px;
+    margin: 25px 0;
+    padding: 0;
+}
+
+p,
+h2,
+h3 {
+    line-height: 25px;
+    margin: 0 0 25px;
+    padding: 0;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+h3 {
+    font-size: 19px;
+}
+
+dd {
+    margin-left: 25px;
+}
+
+/**
+ * Layout
+ * ==================================================
+ */
+
+.container {
+    margin: 0 auto 50px;
+    width: 720px;
+}
+
+header {
+    text-align: center;
+}
+
+.navigation {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px 10px 0 0;
+    margin: 0;
+    padding: 25px;
+    text-align: center;
+}
+
+.content {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top-width: 0;
+    min-height: 250px;
+    padding: 50px;
+}
+
+footer {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 0 0 10px 10px;
+    border-top-width: 0;
+    padding: 25px;
+    text-align: center;
+}
+
+/**
+ * Header
+ * ==================================================
+ */
+
+h1 > a,
+h1 > a:visited {
+    color: #333;
+    display: inline-block;
+    font-weight: 700;
+    line-height: 50px;
+    padding: 25px 15px;
+    transition: color .5s ease-in-out;
+}
+
+h1 > a:hover {
+    color: #999;
+    text-decoration: none;
+}
+
+@-webkit-keyframes wobble {
+    0%, 50%, 100% { -webkit-transform: rotate(0deg); -webkit-animation-timing-function: ease-out; }
+    25% { -webkit-transform: rotate(30deg); -webkit-animation-timing-function: ease-in; }
+    75% { -webkit-transform: rotate(-30deg); -webkit-animation-timing-function: ease-in; }
+}
+
+@keyframes wobble {
+    0%, 50%, 100% { transform: rotate(0deg); animation-timing-function: ease-out; }
+    25% { transform: rotate(30deg); animation-timing-function: ease-in; }
+    75% { transform: rotate(-30deg); animation-timing-function: ease-in; }
+}
+
+/**
+ * Navigation
+ * ==================================================
+ */
+
+.navigation > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation > ul > li {
+    display: inline-block;
+    margin-right: 21px;
+}
+
+.navigation > ul > li:last-child {
+    margin-right: 0;
+}
+
+.navigation > ul > li > a {
+    color: #999;
+    font-weight: 700;
+    transition: color .1s ease-in-out;
+}
+
+.navigation > ul > li > a:hover {
+    color: #25a;
+    text-decoration: none;
+}
+
+.navigation > ul > li > a > i {
+    display: none;
+}
+
+/**
+ * Content
+ * ==================================================
+ */
+
+.content p:last-child {
+    margin-bottom: 0;
+}
+
+.hc-logo {
+    background: url("/assets/img/hc-logo.png") no-repeat;
+    background-size: 200px 200px;
+    display: block;
+    height: 200px;
+    margin: 0 auto 20px;
+    width: 200px;
+}
+
+.download-link {
+    text-align: center;
+    margin: 0 auto 20px;
+}
+
+.itr-logo {
+    background: url("/assets/img/Logo_Itransition.svg") no-repeat;
+    background-size: 300px 200px;
+    display: block;
+    height: 200px;
+    margin: 0 auto 50px;
+    width: 300px;
+}
+
+.screenshot {
+    display: block;
+    height: 300px;
+    margin: 0 auto 20px;
+    width: 560px;
+}
+
+.fullscreen:-webkit-full-screen {
+    width: auto !important;
+    height: auto !important;
+    margin:auto !important;
+}
+.fullscreen:-moz-full-screen {
+    width: auto !important;
+    height: auto !important;
+    margin:auto !important;
+}
+.fullscreen:-ms-fullscreen {
+    width: auto !important;
+    height: auto !important;
+    margin:auto !important;
+}
+
+.social {
+    font-size: 50px;
+    line-height: 100px;
+    text-align: center;
+}
+
+.social [class^="icon-"]:before,
+.social [class*=" icon-"]:before {
+    margin-left: .1em;
+    margin-right: .1em;
+    -webkit-font-smoothing: antialiased;
+}
+
+.social .icon-github-circled:before {
+    color: #333;
+}
+
+.social .icon-twitter:before {
+    color: #5e9fca;
+}
+
+.social .icon-linkedin-squared:before {
+    color: #0071a1;
+}
+
+.social .icon-stackoverflow:before {
+    background: -webkit-linear-gradient(#f90, #86868a);
+    color: #86868a;
+    margin-right: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.social .icon-foursquare:before {
+    color: #00aeef;
+}
+
+.social .icon-gmail:before {
+    color: #e93e30;
+    font-size: .9em;
+    margin-right: .3em;
+}
+
+#projects-loading {
+    color: #999;
+    font-size: 50px;
+    left: 50%;
+    line-height: 50px;
+    margin: 25px 0 0 -30px;
+    position: absolute;
+    text-align: center;
+    width: 60px;
+}
+
+#projects {
+    display: none;
+    opacity: 0;
+}
+
+#projects dt > .meta {
+    color: #999;
+    font-size: 14px;
+    margin-left: 8px;
+}
+
+#projects dd {
+    margin-bottom: 15px;
+}
+
+#projects dd:last-child {
+    margin-bottom: 0;
+}
+
+.not-found {
+    text-align: center;
+}
+
+.not-found h2 {
+    margin-bottom: 50px;
+}
+
+.not-found img {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    max-width: 451px;
+    width: 100%;
+}
+
+/**
+ * Footer
+ * ==================================================
+ */
+
+footer {
+    color: #999;
+}
+
+footer > p {
+    margin-bottom: 15px;
+}
+
+footer > p:last-child {
+    margin-bottom: 0;
+}
+
+a.creative-commons,
+a.creative-commons:visited,
+a.creative-commons:hover {
+    color: #999;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+/**
+ * Styles for retina displays
+ * ==================================================
+ */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min--moz-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: '144dpi') {
+    .hc-logo {
+        background-image: url("/assets/img/hc-logo.png");
+    }
+    .itr-logo {
+        background-image: url("/assets/img/Logo_Itransition.svg");
+    }
+}
+
+/**
+ * Responsiveness
+ * ==================================================
+ */
+
+@media only screen and (max-width: 767px) {
+    .container {
+        margin-left: 15px;
+        margin-right: 15px;
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .content {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .social [class^="icon-"]:before,
+    .social [class*=" icon-"]:before {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .navigation {
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    .navigation > ul > li {
+        margin-right: 0;
+    }
+
+    .navigation > ul > li > a > i {
+        display: inline-block;
+    }
+
+    .social {
+        font-size: 40px;
+        line-height: 75px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .container {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .navigation,
+    .content,
+    footer {
+        border-left-width: 0;
+        border-radius: 0;
+        border-right-width: 0;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .navigation {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .content {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .social {
+        font-size: 35px;
+        line-height: 50px;
+    }
+}
+
+.isa_info, .isa_success, .isa_warning, .isa_error {
+    margin: 10px 0px;
+    padding:12px;
+
+}
+.isa_info {
+    color: #00529B;
+    background-color: #BDE5F8;
+}
+.isa_success {
+    color: #4F8A10;
+    background-color: #DFF2BF;
+}
+.isa_warning {
+    color: #9F6000;
+    background-color: #FEEFB3;
+}
+.isa_error {
+    color: #D8000C;
+    background-color: #FFD2D2;
+}
+.isa_info i, .isa_success i, .isa_warning i, .isa_error i {
+    margin:10px 15px;
+    font-size:1em;
+    vertical-align:middle;
+}
