@@ -16,22 +16,26 @@
 </head>
 <body>
 
-    <div class="container">
+<div class="container">
 
-        <header><h1><a href="/">Itransition LTD.</a></h1></header>
-
-        <div class="content">
-            {{ content }}
-        </div>
-
-        <footer>
-            <p>{{ site.time | date: '%Y' }}&nbsp;&nbsp;Itransition&nbsp;LTD.</p>
-        </footer>
-
+    <header><h1><a href="/">Itransition LTD.</a></h1></header>
+    <div class="navigation">
+        <ul>
+            <li><a href="/telegram/navigation.html"><span>Telegram Integration For Jira</span></a></li>
+        </ul>
+    </div>
+    <div class="content">
+        {{ content }}
     </div>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="/assets/js/main.js?rev={{ site.github.build_revision }}"></script>
+    <footer>
+        <p>{{ site.time | date: '%Y' }}&nbsp;&nbsp;Itransition&nbsp;LTD.</p>
+    </footer>
+
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="/assets/js/main.js?rev={{ site.github.build_revision }}"></script>
 
 </body>
 </html>

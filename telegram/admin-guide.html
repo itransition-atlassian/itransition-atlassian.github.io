@@ -1,0 +1,86 @@
+---
+layout: telegram-doc
+title: Telegram Integration For Jira
+---
+<h2>Administrator guide</h2>
+<p><b>Follow the next steps to configure Telegram Integration For Jira:</b></p>
+<ol type="1">
+    <li>
+        After installing the plugin click on "<b>Managing Telegram Bot</b>" link in "<b>Other</b>" section on addons
+        page.
+        <br>
+        <a href="#" onclick="return false;">
+            <img onclick="makeFullScreen(this)" class="screenshot-small fullscreen"
+                 title="Click the image to open in full size"
+                 src="../assets/img/screenshots/telegram/admin-get-started.png"/>
+        </a>
+        <br>
+    </li>
+
+    <li>
+        Then you need to log in to your Telegram account. You will authenticated in as admin, so your account will be used
+        for sending confirmation messages during other users registration.
+        <b>Enter the phone number</b> associated with your Telegram account in the "<b>phone</b>" field and click on "<b>Log
+        in as admin</b>" button.
+        <br>
+        <a href="#" onclick="return false;">
+            <img onclick="makeFullScreen(this)" class="screenshot-small fullscreen"
+                 title="Click the image to open in full size"
+                 src="../assets/img/screenshots/telegram/admin-login.png"/>
+        </a>
+        <br>
+    </li>
+    <li>
+        You will receive a message from <b>Telegram</b> like:
+        <br>
+        <a href="#" onclick="return false;">
+            <img onclick="makeFullScreen(this)" class="screenshot-small fullscreen"
+                 title="Click the image to open in full size"
+                 src="../assets/img/screenshots/telegram/admin-telegram-code.png"/>
+        </a>
+        <br>
+        Enter code from this message in the "<b>Code</b>" field. <b>Do not forward</b>
+        this message or send this code by Telegram, otherwise it will be expired.
+        Press the "<b>Authenticate</b>" button.
+        <br>
+        <a href="#" onclick="return false;">
+            <img onclick="makeFullScreen(this)" class="screenshot-small fullscreen"
+                 title="Click the image to open in full size"
+                 src="../assets/img/screenshots/telegram/admin-send-code.png"/>
+        </a>
+        <br>
+
+    </li>
+    <li>
+        Congratulations! You successfully logged in to your Telegram account! Now you need to create a bot. Enter bot
+        <b>name</b> and <b>userName</b>.
+        <br>The <b>name</b> of your bot is displayed in contact details and elsewhere.
+        <br>The <b>Username</b> is a short name, to be used in mentions and telegram.me links.
+        Usernames are 5-32 characters long and are case insensitive, but may only include Latin characters, numbers, and
+        underscores.
+        Your bot's username must end in ‘bot’, e.g. ‘Jira_bot’ or ‘JiraBot’.
+        <br>
+        <b>Note: Username</b> in Telegram is the <b>unique</b>  identifier.
+        If the username you entered is already taken, you will receive an error message.
+        <a href="#" onclick="return false;">
+            <img onclick="makeFullScreen(this)" class="screenshot-small fullscreen"
+                 title="Click the image to open in full size"
+                 src="../assets/img/screenshots/telegram/admin-bot-names.png"/>
+        </a>
+        <br>
+        Press the "<b>Create bot</b>" button. If bot name and username are correct, you'll see page with telegram link
+        to your bot.
+        <br>
+        <a href="#" onclick="return false;">
+            <img onclick="makeFullScreen(this)" class="screenshot-small fullscreen"
+                 title="Click the image to open in full size"
+                 src="../assets/img/screenshots/telegram/admin-bot-created.png"/>
+        </a>
+        <br>
+    </li>
+</ol>
+<br>
+That's all! Plugin is configured now, link to user registration page is displayed now in the profile dropdown
+in the top right corner of any JIRA page, and all users can sign in and create chats.
+<br>
+<b>Note:</b>  Admin account and Bot are required for plugin to work. If you press "<b>Log out</b>" button, <b>the plugin will stop working!</b> And most importantly, <b>do not remove the bot!</b>

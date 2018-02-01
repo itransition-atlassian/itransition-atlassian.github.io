@@ -1,0 +1,28 @@
+---
+layout: telegram-doc
+title: Telegram Integration For Jira
+---
+<h2>User guide. Part III. Bot abilities</h2>
+<p><b>Why do we need a bot?</b></p>
+Bot manages all chats created from Jira.
+<br>
+Bot checks recently added users, and,
+if they are registered in Telegram Integration, t
+hey can see this chat in the list in project menu.
+Otherwise bot posts in chat a warning message.
+<br>
+Bot sends notifications about changes in JIRA. Notification schema is the same as schema for emails.
+<br>
+List of events reported by the bot:
+<ul>
+    <li>Issue created</li>
+    <li>Issue resolved</li>
+    <li>Issue closed</li>
+    <li>Issue assigned</li>
+    <li>Issue deleted</li>
+    <li>Issue comment edited</li>
+    <li>Issue deleted</li>
+</ul>
+<br>If issue or chat for issue was deleted, bot sends notification to this chat and leaves it.
+<br>If user edits a message in chat with "<b>autopost messages in comments</b>" feature enabled, comment also will be edited.
+<br>Bot can be added only in chats, created from Jira.
