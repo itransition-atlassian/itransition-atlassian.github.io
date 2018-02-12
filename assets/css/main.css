@@ -213,6 +213,14 @@ h1 > a:hover {
     width: 560px;
 }
 
+.screenshot-small {
+    display: block;
+    max-height: 300px;
+    margin: 0 auto 20px;
+    max-width: 460px;
+    border: solid;
+}
+
 .fullscreen:-webkit-full-screen {
     width: auto !important;
     height: auto !important;
