@@ -26,3 +26,26 @@ List of events reported by the bot:
 <br>If issue or chat for issue was deleted, bot sends notification to this chat and leaves it.
 <br>If user edits a message in chat with "<b>autopost messages in comments</b>" feature enabled, comment also will be edited.
 <br>Bot can be added only in chats, created from Jira.
+<br>
+<br>
+<b>Bot commands</b>
+<p>
+    <br><b>/help</b>
+    <br>This command displays all commands the bot has to offer. <b>/help</b> [command] can display deeper information
+
+    <br><b>/start</b>
+    <br>This command is used to connect your JIRA and Telegram accounts. Works only in private chat with bot.
+
+    <br><b>/comment</b>
+    <br>You can reply with this command to send replied message to JIRA or you can use it inline like this: <b>/comment</b> <i>some important text.</i>
+    In order to detect replies, bot must have admin rights in current group. Works only in issue chats.
+    <br>
+    <br>
+    <a href="#" onclick="return false;">
+        <img onclick="makeFullScreen(this)" class="screenshot-small fullscreen"
+             title="Click the image to open in full size"
+             src="../assets/img/screenshots/telegram/bot-commands.png"/>
+    </a>
+<br>If you try to use wrong command or the command syntax is invalid the bot will say so.
+<br><br>Also, if you would like to have command suggestions while typing, you have to add commands to your bot via BotFather by yourself.
+</p>
