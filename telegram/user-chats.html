@@ -52,6 +52,12 @@ Enabling this option means that every message from this chat will be posted in c
          title="Click the image to open in full size"
          src="../assets/img/screenshots/telegram/user-2-create-chat2.png"/>
 </a>
+<br>Another option is <b>notification types</b> select, that determines on which events bot must send notifications to this chat.
+<a href="#" onclick="return false;">
+    <img onclick="makeFullScreen(this)" class="screenshot-small fullscreen"
+         title="Click the image to open in full size"
+         src="../assets/img/screenshots/telegram/user-2-create-chat4-notifications.png"/>
+</a>
 
 <br>You can also give some users <b>administrative privileges</b>.
 Admins can delete this chat from Jira, add and remove users , but <b>they can't manage other admins, or chat
@@ -81,7 +87,7 @@ Admins can delete this chat from Jira, add and remove users , but <b>they can't 
 <a href="#" onclick="return false;">
     <img onclick="makeFullScreen(this)" class="screenshot-small fullscreen"
          title="Click the image to open in full size"
-         src="../assets/img/screenshots/telegram/user-2-isuue-view.png"/>
+         src="../assets/img/screenshots/telegram/user-2-issue-view.png"/>
 </a>
 <br>
 </p>
@@ -109,4 +115,28 @@ Admins can delete this chat from Jira, add and remove users , but <b>they can't 
     <b>Note:</b> If you delete this chat, it will be not available in Jira but it still stays in Telegram app.
     <br>
     Logged in chat users also can view this window but they can't edit anything
+</p>
+<h3>Connect issue or project with existing chat</h3>
+<p>
+    First of all, you should add bot to the chat, which you want to connect with JIRA. Bot will send the <b>connection key</b>.
+    <br>
+    <br>
+    <a href="#" onclick="return false;">
+        <img onclick="makeFullScreen(this)" class="screenshot-small fullscreen"
+             title="Click the image to open in full size"
+             src="../assets/img/screenshots/telegram/user-2-connect-chat-telegram.png"/>
+    </a>
+    <br>
+    Then go to the issue, to which you want to connect chat, or to the <b>Chats</b> section and click <b>Add to existing chat</b> button.
+    Then you will see modal window with <b>Connection key</b> field, where you should paste <b>key</b>, sent by bot.
+    <br>
+    <br>
+    <a href="#" onclick="return false;">
+        <img onclick="makeFullScreen(this)" class="screenshot-small fullscreen"
+             title="Click the image to open in full size"
+             src="../assets/img/screenshots/telegram/user-2-connect-chat-jira.png"/>
+    </a>
+    <br>
+    <b>Note:</b> This option is available for admin and users, who have connected their telegram accounts with jira by sending <b>/start</b>
+    command to bot (full authentication with code and password is required only for <b>editing</b> connected chats).
 </p>
