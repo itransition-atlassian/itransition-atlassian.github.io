@@ -198,7 +198,7 @@ h1 > a:hover {
 }
 
 .itr-logo {
-    background: url("/assets/img/Logo_Itransition.svg") no-repeat;
+    background: url("/assets/img/Itransition_Logo_Gradient.png") no-repeat;
     background-size: 300px 200px;
     display: block;
     height: 200px;
@@ -364,7 +364,7 @@ a.creative-commons:hover {
         background-image: url("/assets/img/hc-logo.png");
     }
     .itr-logo {
-        background-image: url("/assets/img/Logo_Itransition.svg");
+        background-image: url("/assets/img/Itransition_Logo_Gradient.png");
     }
 }
 
