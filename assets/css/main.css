@@ -198,8 +198,7 @@ h1 > a:hover {
 }
 
 .itr-logo {
-    background: url("/assets/img/Itransition_Logo_Gradient.png") no-repeat;
-    background-size: 300px 200px;
+    background: url("/assets/img/Itransition_Logo_Gradient.png") no-repeat center;
     display: block;
     height: 200px;
     margin: 0 auto 50px;
