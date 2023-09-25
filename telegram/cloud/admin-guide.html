@@ -1,0 +1,124 @@
+---
+layout: telegram-cloud-doc
+title: Telegram Integration for Jira Cloud
+---
+<h2>Administrator guide</h2>
+<p><b>Follow the next steps to configure Telegram Integration For Jira:</b></p>
+<p><b>Note:</b> successful usage of Telegram Integration requires a Telegram account and created bot via BotFather.</p>
+<p><b>How to create a new bot:</b></p>
+<ol type="1">
+    <li>
+        Find BotFather in Telegram.
+        <br>
+        <a href="#" onclick="return false;">
+            <img onclick="makeFullScreen(this)" class="screenshot-small fullscreen"
+                 title="Click the image to open in full size"
+                 src="../../assets/img/screenshots/telegram/cloud/bot-father.png"/>
+        </a>
+        <br>
+    </li>
+    <li>
+        Enter a /newbot command.
+        <br>
+        <a href="#" onclick="return false;">
+            <img onclick="makeFullScreen(this)" class="screenshot-small fullscreen"
+                 title="Click the image to open in full size"
+                 src="../../assets/img/screenshots/telegram/cloud/new-bot.png"/>
+        </a>
+        <br>
+    </li>
+    <li>
+        Follow BotFather instructions.
+        <br>
+    </li>
+    <li>
+        Receive a message from BotFather with your new bot data.
+        <br>
+    </li>
+</ol>
+<p><b>User authorization:</b></p>
+<ol type="1">
+    <li>
+        After installing the plugin click on "Configure" or "Global Settings".
+        <br>
+    </li>
+    <li>
+        <p>Then you need to log in to your Telegram account.
+        You will be authenticated as an admin, so your account will be used for sending confirmation messages during other users registration.
+            Enter the phone number associated with your Telegram account in the <b>"Phone"</b> field and click on <b>"Sign in"</b> button.</p>
+        <br>
+        <a href="#" onclick="return false;">
+            <img onclick="makeFullScreen(this)" class="screenshot-small fullscreen"
+                 title="Click the image to open in full size"
+                 src="../../assets/img/screenshots/telegram/cloud/administrator-sign-in.png"/>
+        </a>
+        <br>
+    </li>
+    <li>
+        You will receive a message with the code from <b>Telegram.</b> Enter the code in the <b>"Code"</b> field.
+        <br>
+    </li>
+    <li>
+        If your Two-Step verification is enabled, enter your password for it.
+        <br>
+        <a href="#" onclick="return false;">
+            <img onclick="makeFullScreen(this)" class="screenshot-small fullscreen"
+                 title="Click the image to open in full size"
+                 src="../../assets/img/screenshots/telegram/cloud/administrator-enter-code.png"/>
+        </a>
+        <br>
+    </li>
+    <li>
+        Congratulations! You successfully logged in to your Telegram account! Now you need to authorize a bot, that you've created.
+        <br>
+    </li>
+</ol>
+<br>
+<p><b>How to authorize a Bot:</b></p>
+<ol type="1">
+    <li>
+        Go to your Telegram chat with BotFather.
+        <br>
+    </li>
+    <li>
+        Find a message from BotFather with your new bot data, or enter a /token command and follow the instructions.
+        <br>
+    </li>
+    <li>
+        Copy your bot token and insert it in the <b>"Token"</b> field on the configuration page.
+        <br>
+    </li>
+    <li>
+        Click <b>"Authorize Telegram bot"</b> button.
+        <br>
+        <a href="#" onclick="return false;">
+            <img onclick="makeFullScreen(this)" class="screenshot-small fullscreen"
+                 title="Click the image to open in full size"
+                 src="../../assets/img/screenshots/telegram/cloud/administrator-adding-bot.png"/>
+        </a>
+    </li>
+</ol>
+<br>
+<p><b>How to activate your bot:</b></p>
+<ol type="1">
+    <li>
+        After authorising your bot in Jira, you will see a link to your bot.
+        <br>
+    </li>
+    <li>
+        Insert it into the Telegram search field and find your Bot.
+        <br>
+    </li>
+    <li>
+        Press "Start" to activate the bot.
+        <br>
+        <a href="#" onclick="return false;">
+            <img onclick="makeFullScreen(this)" class="screenshot-small fullscreen"
+                 title="Click the image to open in full size"
+                 src="../../assets/img/screenshots/telegram/cloud/bot-start-command.png"/>
+        </a>
+    </li>
+</ol>
+<br>
+<p>That's it! The Plugin is configured now!</p>
+<p><b>Note:</b> An Admin account and Bot are required for the plugin to work. If you press <b>"Log out"</b> button, <b>the plugin will stop working!</b> And most importantly, <b>do not remove the bot!</b></p>

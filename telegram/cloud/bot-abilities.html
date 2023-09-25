@@ -1,0 +1,59 @@
+---
+layout: telegram-cloud-doc
+title: Telegram Integration for Jira Cloud
+---
+<h2>User guide. Part II. Bot abilities</h2>
+<p><b>Why do we need a bot?</b></p>
+<p>Gives you a wonderful opportunity to manage your projects via the popular messenger <b>Telegram</b> which makes your work much more convenient.</p>
+<p>You can create <b>project chats</b> to monitor all activity in general on your project,
+    which can help you to spot all bottlenecks of your project, so you could manage them.</p>
+<p>You can also create <b>issue chats</b> to control some specific, maybe especially important tasks.</p>
+<p><b>Jira Bot</b> will notify you about everything you decide is important! If an issue or chat for an issue was deleted, the bot sends a notification to this chat and leaves it.</p>
+<p>The bot can be added only in chats, created from Jira. Bot manages all chats created from Jira Bot, checks recently added users, and, if they are registered in Telegram Integration, they can see this chat in the list in the project menu.</p>
+
+<b>List of events reported by the bot:</b>
+<ul>
+    <li>Issue Created</li>
+    <li>Issue Resolved</li>
+    <li>Issue Closed</li>
+    <li>Issue Assigned</li>
+    <li>Issue Deleted</li>
+    <li>Issue Commented</li>
+    <li>Issue Comment Edited</li>
+    <li>Issue Deleted</li>
+    <li>Issue Reopened</li>
+    <li>Issue Progress Started</li>
+    <li>Issue Generic Event</li>
+</ul>
+<i>Please note, that if you want to receive notifications about status changes, you should make sure that you have the correct events configured on your workflow.</i>
+<br>
+<i><b>Example:</b> if you want to receive notification about the Issue Resolved event, make sure that you have this event added to the transition's Post Functions</i>
+<br>
+<a href="#" onclick="return false;">
+    <img onclick="makeFullScreen(this)" class="screenshot-small fullscreen"
+         title="Click the image to open in full size"
+         src="../../assets/img/screenshots/telegram/cloud/post-functions.png"/>
+</a>
+<br>
+<br>
+<b>Bot commands</b>
+<p>
+    <br><b>/help</b>
+    <br>This command displays all commands the bot has to offer.
+    <br><b>/start</b>
+    <br>This command is used to connect your JIRA and Telegram accounts. Works only in private chat with bot.
+    <br><b>/comment</b>
+    <br>You can reply with this command to send replied message to JIRA or you can use it inline like this: <b>/comment</b> <i>some important text.</i>
+    In order to detect replies, bot must have admin rights in current group. Works only in issue chats.
+    <br><b>/comment</b> <<i>issue-key</i>> <<i>comment text</i>>
+    <br>Add comment to issue. Using in private chat with bot.
+    <br><b>/task</b>
+    <br>This command is used to create tasks directly from telegram chat. You can use this command only in private chat with bot.
+    Bot will ask you for all required fields, which are needed for task creation
+    <br><b>/worklog</b> &lt;<i>issue-key</i>&gt;
+    <br>Add worklog to issue. Using in private chat with bot.
+    <br>You can log your work with this command only in private chat with bot. You should pass an issue key as an argument for this command (e.g. <b><i>/worklog ISSUE-1</i></b>).
+    <br>
+    <br>
+    If you try to use wrong command or the command syntax is invalid the bot will say so.
+</p>
