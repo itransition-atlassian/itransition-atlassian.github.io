@@ -4,12 +4,11 @@ title: Telegram Integration for Jira Cloud
 ---
 <h2>User guide. Part II. Bot abilities</h2>
 <p><b>Why do we need a bot?</b></p>
-<p>Gives you a wonderful opportunity to manage your projects via the popular messenger <b>Telegram</b> which makes your work much more convenient.</p>
+<p>Bot gives you a wonderful opportunity to manage your projects via the popular messenger <b>Telegram</b> which makes your work much more convenient.</p>
 <p>You can create <b>project chats</b> to monitor all activity in general on your project,
     which can help you to spot all bottlenecks of your project, so you could manage them.</p>
 <p>You can also create <b>issue chats</b> to control some specific, maybe especially important tasks.</p>
-<p><b>Jira Bot</b> will notify you about everything you decide is important! If an issue or chat for an issue was deleted, the bot sends a notification to this chat and leaves it.</p>
-<p>The bot can be added only in chats, created from Jira. Bot manages all chats created from Jira Bot, checks recently added users, and, if they are registered in Telegram Integration, they can see this chat in the list in the project menu.</p>
+<p>The bot will notify you about everything you consider important! If a task or a chat related to a task has been deleted, the bot sends a notification to this chat and leaves it. The bot will monitor all chats created on the chat configuration page.</p>
 
 <b>List of events reported by the bot:</b>
 <ul>
@@ -48,7 +47,7 @@ title: Telegram Integration for Jira Cloud
     <br><b>/comment</b> <<i>issue-key</i>> <<i>comment text</i>>
     <br>Add comment to issue. Using in private chat with bot.
     <br><b>/task</b>
-    <br>This command is used to create tasks directly from telegram chat. You can use this command only in private chat with bot.
+    <br>This command is used to create tasks directly from Telegram chat. You can use this command only in private chat with bot.
     Bot will ask you for all required fields, which are needed for task creation
     <br><b>/worklog</b> &lt;<i>issue-key</i>&gt;
     <br>Add worklog to issue. Using in private chat with bot.
