@@ -1,0 +1,195 @@
+---
+layout: telegram-cloud-doc
+title: Telegram Integration for Jira Cloud
+---
+<h2>User guide Part III. Telegram Chats Page</h2>
+<p><b>After the bot is added, you can create a task chat or a project chat on the chat's page.</b></p>
+<p>The chat's page is available after installing the plugin and completing admin authorization the link is located on the project's sidebar:</p>
+<a href="#" onclick="return false;">
+    <img onclick="makeFullScreen(this)" class="screenshot-small fullscreen"
+         title="Click the image to open in full size"
+         src="../../assets/img/screenshots/telegram/cloud/project-sidebar-navigation.png"/>
+</a>
+<p>On the chat's page, you can see all the project chats if you are a project administrator, or chats where you are the owner or member.</p>
+<a href="#" onclick="return false;">
+    <img onclick="makeFullScreen(this)" class="screenshot-small fullscreen"
+         title="Click the image to open in full size"
+         src="../../assets/img/screenshots/telegram/cloud/telegram-chats-page.png"/>
+</a>
+<p>On this page, you can create a new chat or edit an existing one.</p>
+
+<p><b>You can use the following parameters:</b></p>
+<ol type="1">
+    <li>
+        <b>Type</b> - chat type. It can have a value: Issue, Project.
+        <br>
+    </li>
+    <li>
+        <b>Issue</b> - contains the issue key for the Issue chats, it is non-editable for Project chat.
+        <br>
+    </li>
+    <li>
+        <b>Auto post comments</b> - this parameter determines whether all messages in the Telegram chat written by participants will be published as comments to the issue.
+        <br>
+    </li>
+    <li>
+        <b>Notification</b> - this parameter determines whether notifications will be sent to the Telegram chat.
+        <br>
+        <b>Note:</b> <i>if you do not specify it, you won't receive notifications in Telegram, also, this parameter could not be changed after chat creation</i>
+    </li>
+    <li>
+        <b>Issue events</b> - a list of events for which notifications will come to the chat.
+        <br>
+    </li>
+    <b>For Issue chats:</b>
+    <br>
+    <ol type="1">
+        <li>
+            Issue Resolved
+            <br>
+        </li>
+        <li>
+            Issue Closed
+            <br>
+        </li>
+        <li>
+            Issue Assigned
+            <br>
+        </li>
+        <li>
+            Issue Commented
+            <br>
+        </li>
+        <li>
+            Issue Comment Edited
+            <br>
+        </li>
+        <li>
+            Issue Reopened
+            <br>
+        </li>
+        <li>
+            Issue Progress Started
+            <br>
+        </li>
+        <li>
+            Issue Generic Event
+            <br>
+        </li>
+    </ol>
+    <b>For Project chats:</b>
+    <ol type="1">
+        <li>
+            Issue Created
+            <br>
+        </li>
+        <li>
+            Issue Deleted
+            <br>
+        </li>
+        <li>
+            Issue Resolved
+            <br>
+        </li>
+        <li>
+            Issue Closed
+            <br>
+        </li>
+        <li>
+            Issue Assigned
+            <br>
+        </li>
+        <li>
+            Issue Commented
+            <br>
+        </li>
+        <li>
+            Issue Comment Edited
+            <br>
+        </li>
+        <li>
+            Issue Reopened
+            <br>
+        </li>
+        <li>
+            Issue Progress Started
+            <br>
+        </li>
+        <li>
+            Issue Generic Event
+            <br>
+        </li>
+    </ol>
+    <li>
+        <b>Owner</b> - a non-editable parameter, automatically sets the current user. The owner in the Telegram chat will be considered the chat owner and will have the chat administrator rights.
+        <br>
+    </li>
+    <li>
+        <b>Users</b> - a list of chat members who are in the chat and have the rights of regular users.
+        <br>
+    </li>
+    <li>
+        <b>Administrators</b> - a list of chat members who are in the chat and have the rights of Telegram chat administrators.
+        <br>
+    </li>
+    <li>
+        <b>Action</b> - for users who are not the owners of the chat, a Leave button is displayed in this column. Upon clicking, the current user exits the chat.
+    </li>
+</ol>
+<p><b>Note:</b> Only authorized Telegram users that have access to the project are provided in chat member lists (Users, Administrators).</p>
+<p><b>Note:</b> When adding a member to the chat:</p>
+<ol type="1">
+    <li>
+        If the user is not in the chat owner's contact list or the user has privacy settings enabled, a notification will appear after adding them to the chat:
+        <br>
+        <a href="#" onclick="return false;">
+            <img onclick="makeFullScreen(this)" class="screenshot-small fullscreen"
+                 title="Click the image to open in full size"
+                 src="../../assets/img/screenshots/telegram/cloud/telegram-chats-page-invited-member-message.png"/>
+        </a>
+        <br>
+        Also, the user will have a corresponding icon in the member list:
+        <br>
+        <a href="#" onclick="return false;">
+            <img onclick="makeFullScreen(this)" class="screenshot-small fullscreen"
+                 title="Click the image to open in full size"
+                 src="../../assets/img/screenshots/telegram/cloud/telegram-chats-page-invited-member.png"/>
+        </a>
+        <br>
+        <b>Note:</b> <i>On the Telegram side, the bot will send an invitation link to this user for the current chat.</i>
+        <br>
+        Until the added user accepts the invitation, they cannot be appointed as a chat administrator. If an attempt is made to appoint them as an administrator, a repeat chat invitation will be sent to them !
+        <br>
+    </li>
+    <li>
+        Also, you can see the following message:
+        <br>
+        <a href="#" onclick="return false;">
+            <img onclick="makeFullScreen(this)" class="screenshot-small fullscreen"
+                 title="Click the image to open in full size"
+                 src="../../assets/img/screenshots/telegram/cloud/telegram-chats-page-bot-no-start.png"/>
+        </a>
+        <br>
+        This message contains a list of users who have not sent the /start command to the bot.
+        <br>
+    </li>
+    <li>
+        If the user in the members lists has the following icon:
+        <br>
+        <a href="#" onclick="return false;">
+            <img onclick="makeFullScreen(this)" class="screenshot-small fullscreen"
+                 title="Click the image to open in full size"
+                 src="../../assets/img/screenshots/telegram/cloud/telegram-chats-page-member-logout.png"/>
+        </a>
+        <br>
+        This indicates that the member has logged out of the Telegram application plugin and needs to log in again on the plugin authorization page.
+        <br>
+        <b>Note:</b> <i>This user can only be removed from the members lists.</i>
+    </li>
+</ol>
+<p><b>Note:</b> If instead of the chats page you see the following message, you need to authenticate. How to do this is described in the <a href="/telegram/cloud/user-registration.html"><span>User guide. Part I. Registration</span></a>.</p>
+<a href="#" onclick="return false;">
+    <img onclick="makeFullScreen(this)" class="screenshot-small fullscreen"
+         title="Click the image to open in full size"
+         src="../../assets/img/screenshots/telegram/cloud/telegram-chats-page-unauthorized.png"/>
+</a>
