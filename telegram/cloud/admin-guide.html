@@ -128,3 +128,25 @@ title: Telegram Integration for Jira Cloud
 <br>
 <p>That's it! The Plugin is configured now!</p>
 <p><b>Note:</b> For the plugin to function properly, do not revoke the <b>token</b> and do not delete the bot through <b>Bot Father</b></p>
+<br>
+<p><b>How to replace a bot with another bot:</b></p>
+<ol type="1">
+    <li>Click "Remove Telegram Bot" button</li>
+    <li>Insert the token of the new bot in the "Token" field on the configuration page.</li>
+    <li>Click "Authorize Telegram bot" button.</li>
+    <li>Follow the steps in the "How to activate your bot" section.</li>
+</ol>
+<p><b>Note:</b>" Remove Telegram Bot" button will be enabled if there are no previously created chats on "Telegram chats" page</p>
+<a href="#" onclick="return false;">
+    <img onclick="makeFullScreen(this)" class="screenshot-small fullscreen"
+         title="Click the image to open in full size"
+         src="../../assets/img/screenshots/telegram/cloud/administrator-remove-bot.png"/>
+</a>
+<br><br>
+<p><b>Uninstalling the plugin from Jira:</b></p>
+<ul>
+    <li>All information related to existing chats and the bot will be deleted in Jira.</li>
+    <li>Notifications about the plugin uninstallation will be sent to existing chats.</li>
+    <li>The authorized bot will be removed from existing chats.</li>
+</ul>
+<p><b>Note:</b> Existing chats in Telegram will not be deleted</p>
